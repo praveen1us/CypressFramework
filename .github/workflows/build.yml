@@ -17,5 +17,6 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 16
+          headed: true
       - run: npm install
       - run: npm run chromeTest
