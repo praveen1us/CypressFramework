@@ -1,5 +1,5 @@
 # CypressFramework
-Step 1: Install Node JS, Please find the below screen
+Step1: Install Node JS, Please find the below screen
 https://www.nodejs.org/download
  
 
