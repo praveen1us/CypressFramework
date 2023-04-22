@@ -12,6 +12,7 @@ jobs:
   cypress:
     name: cypress tests
     runs-on: windows-latest
+    container: cypress/browsers:node12.18.3-chrome87-ff82
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
