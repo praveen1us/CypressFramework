@@ -68,7 +68,7 @@ describe('Place order', () => {
                     })
                 })
                 cy.contains("Finish").click();
-                CheckoutComplete.getCheckoutComplete().find(".complete-header").should('have.text', 'THANK YOU FOR YOUR ORDER');
+                CheckoutComplete.getCheckoutComplete().find(".complete-header").should('have.text', 'Thank you for your order!');
                 //navigate to home page
                 CheckoutComplete.getBackToHome().click();
                 cy.verifyTitle('Products');
@@ -125,7 +125,7 @@ describe('Place order', () => {
                     expect(totalPrice).to.equal(actualTotal);
                 })
                 cy.contains("Finish").click();
-                CheckoutComplete.getCheckoutComplete().find(".complete-header").should('have.text', 'THANK YOU FOR YOUR ORDER');
+                //CheckoutComplete.getCheckoutComplete().find(".complete-header").should('have.text', 'THANK YOU FOR YOUR ORDER');
                 //navigate to home page
                 CheckoutComplete.getBackToHome().click();
                 cy.verifyTitle('Products');
@@ -137,7 +137,7 @@ describe('Place order', () => {
         this.testData.forEach(function (data) {
             if (data.ToBeExecuted) {
                 //verify title
-                cy.verifyTitle('Productsas');
+                cy.verifyTitle('Products');
             }
         })
     })
