@@ -16,7 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
+      - name: Cypress run 
         with:
-          node-version: 16
-      - run: npm install
-      - run: npm run chromeTest
+          browser: chrome
