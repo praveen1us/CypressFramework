@@ -1,13 +1,22 @@
-name: Cypress test in GitHub Action
-on: [push]
+name: build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  my_job:
-    name: deploy to staging
-    runs-on: ubuntu-18.04
+  cypress:
+    name: cypress tests
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node12.18.3-chrome87-ff82
     steps:
       - uses: actions/checkout@master
-      - name: cyress test cases
-        uses: cypress-io/github-action@v2.9.7
+      - uses: actions/setup-node@master
         with:
-           start: npm start
+          node-version: 16
+      - run: npm install
+      - run: npm run chromeTest
