@@ -6,8 +6,7 @@ jobs:
     name: deploy to staging
     runs-on: ubuntu-18.04
     steps:
-      — name: Checkout
-        uses: actions/checkout@main
+      - uses: actions/checkout@master
       - name: cyress test cases
         uses: cypress-io/github-action@v2.9.7
         with:
