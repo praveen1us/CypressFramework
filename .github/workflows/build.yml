@@ -11,7 +11,7 @@ on:
 jobs:
   cypress:
     name: cypress tests
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     container: cypress/browsers:node12.18.3-chrome87-ff82
     steps:
       - uses: actions/checkout@master
