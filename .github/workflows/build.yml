@@ -22,7 +22,7 @@ jobs:
   build:
     name: docker publish
     runs-on: ubuntu-latest
-    if: github.event.name == 'push'
+    if: github.ref == 'refs/heads/main'
     needs: cypress
     steps:
       - name: Checkout
