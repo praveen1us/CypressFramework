@@ -2,7 +2,7 @@ pipeline{
     agent any
     parameters{
         string(name: 'SPEC',defaultValuw: "cypress/integration/**/**",description: "Enter the script path you want")
-        choice(name: 'BROWSER', choices: ['chrome','edge','firefox'],descriotion: "choice browser")
+        choice(name 'BROWSER', choices: ['chrome','edge','firefox'],descriotion: "choice browser")
     }
 
     options{
@@ -10,10 +10,12 @@ pipeline{
     }
 
     stages{
-        stage("Building"){
-            echo "Building the application"
+        stage('Building'){
+            steps{
+                echo "Building the application"
+            }
         }
-        stage("Testing"){
+        stage('Testing'){
             steps{
                 bat "npn i"
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
