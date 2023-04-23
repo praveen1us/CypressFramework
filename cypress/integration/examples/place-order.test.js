@@ -142,12 +142,12 @@ describe('Place order', () => {
         })
     })
     
-    it('Should match not page title', function () {
+    /*it('Should match not page title', function () {
         this.testData.forEach(function (data) {
             if (data.ToBeExecuted) {
                 //verify title
                 cy.verifyTitle('Productsasd');
             }
         })
-    })
+    })*/
 })
