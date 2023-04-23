@@ -23,7 +23,7 @@ https://www.nodejs.org/download
 
  
 
-Step 3:Install Visual Studio code
+Step 3:Install Visual Studio code here
 url: https://code.visualstudio.com/download
 
 Step 4: Install Cypress 
