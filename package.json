@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules\\.bin\\cypress run",
+    "test": "./node_modules/.bin/cypress run",
     "headMode": "npm run test -- --headed",
     "chromeTest": "npm run test -- --headed --browser chrome",
     "recordDashboardTest": "npx cypress run --record --key 247b9987-9596-4227-92cf-3cc9120860da --headed --browser chrome"
