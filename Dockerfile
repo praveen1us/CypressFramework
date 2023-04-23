@@ -5,6 +5,7 @@ RUN mkdir /my-cypress-project
 #we make it our workdirectory
 WORKDIR /my-cypress-project
 COPY ./package.json .
+COPY ./cypress.config.js .
 COPY ./cypress ./cypress
 #COPY . /app
 #Install cypress dependencies in the work directory
