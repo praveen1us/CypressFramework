@@ -56,6 +56,15 @@ How to run cypress test case:
 npx cypress run --spec cypress\integration\examples\place-order.test.js --headed --browser edge
  
  
+How to run Docker image local:
+Create image:
+docker build -t my-cypress-image:1.1.2 .
+
+docker images
+How to run the docker image:
+docker run -i -v "%cd%":/my-cypress-project -t my-cypress-image:1.1.2 --spec cypress/integration/examples/*.js
+How to see results:
+ 
 
 
 
