@@ -27,7 +27,7 @@ describe('Place order', () => {
         this.testData.forEach(function (data) {
             if (data.ToBeExecuted) {
                 //verify title
-                cy.verifyTitle('Products');
+                cy.verifyTitle('Products')
                 //select products
                 data.productName.forEach((elmProduct) => {
                     cy.selectProduct(elmProduct);
