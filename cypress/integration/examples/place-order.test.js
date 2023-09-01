@@ -12,7 +12,7 @@ describe('Place order', () => {
         //login credentials
         LoginPage.getUserName().type(Cypress.env('userId'));
         LoginPage.getPassword().type(Cypress.env('password'));
-        LoginPage.getLoginButton().click();
+        LoginPage.getLoginButton().click()
     });
 
     //load test data
