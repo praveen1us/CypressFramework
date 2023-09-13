@@ -1,3 +1,4 @@
+//CartPage
 class CartPage {
     getCartFooter() {
         return cy.get(".cart_footer");
