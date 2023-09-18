@@ -28,12 +28,11 @@ stage('Build'){
 
 post{
     always{
-publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])    }
-    success{
+publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\CypressPipeline\\cypress\\reports\\html', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])    success{
         echo "====++++only when successful++++===="
     }
     failure{
         echo "====++++only when failed++++===="
     }
 }
-}            
+}
