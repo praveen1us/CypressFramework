@@ -40,4 +40,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cypress-giri:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cypress-giriasd:latest
